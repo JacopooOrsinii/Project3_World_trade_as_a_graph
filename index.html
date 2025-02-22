@@ -25,9 +25,10 @@
       padding: 10px 15px;
       text-decoration: none;
       margin: 5px 0;
+      transition: filter 0.3s ease-in-out; /* Smooth transition */
     }
     .sidebar a:hover {
-      background-color: #575757;
+      filter: brightness(1.2); /* Increase brightness on hover */
     }
     .content {
       margin-left: 220px;
@@ -113,14 +114,17 @@
 
     <!-- Section 4: World trade graph representation -->
     <div id="section4" class="section">
+      
       <h1>World trade graph representation</h1>
       <p>
         It was a challenge to represent a graph with 26.000 arcs, then a solution that has been implemented is to represent direct arcs from a Country A to a Country B if Country A is the biggest seller, the country that has exported the most, to Country B. Also the arcs are coloured according to the continent of origin of the exporter
       </p>
+      
       <h3>Year 2017</h3>
-      <img src="images/WTG.2.jpg" alt="WTG.2" width="600" height="400">
-      <h3>Year 2022</h>
-      <img src="images/WTG.3.jpg" alt="WTG.3" width="600" height="400">
+      <img src="images/WTG.2.jpg" alt="WTG.2" width="800" height="600">
+      
+      <h3>Year 2022</h3>
+      <img src="images/WTG.3.jpg" alt="WTG.3" width="800" height="600">
     </div>
 
   </div>
