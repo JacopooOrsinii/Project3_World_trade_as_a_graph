@@ -1,43 +1,87 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Semplice</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-        }
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        a:hover {
-            background-color: #0056b3;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Trade as a Graph</title>
+  <style>
+    /* Stile per il layout a due colonne */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 200px;
+      background-color: #333;
+      min-height: 100vh;
+      padding-top: 20px;
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      margin: 5px 0;
+    }
+    .sidebar a:hover {
+      background-color: #575757;
+    }
+    /* Contenuto principale */
+    .content {
+      margin-left: 220px; /* lascia spazio per la sidebar */
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      font-size: 18px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Project 3: Word trade as a graph</h1>
-    <p>This project was carried out as part of the Data Driven Modeling of Complex Systems course taught by Professor Walter Quattrociocchi at the University of Rome La Sapienza. The aim of the research is to explore the potential of representing a complex phenomenon as the world trade, the driving force of our economies, through the statistical methodologies provided by complex systems theory. Can such a robust institution be permanently affected by external events? Does it adapt to these influences? These questions will be examined in the subsequent sections of this research.</p>
-    <img src="images/WTG.1.jpg" alt="World Trade Graph" width="100" height="50">
+  <!-- Sidebar con menù interattivo -->
+  <div class="sidebar">
+    <a href="#" onclick="openSection('section1')">Introduzione</a>
+    <a href="#" onclick="openSection('section2')">Grafico</a>
+    <!-- Aggiungi altri link se necessario -->
+  </div>
+  
+  <!-- Contenuto principale -->
+  <div class="content">
+    <!-- Sezione 1: Introduzione -->
+    <div id="section1" class="section">
+      <h1>Project 3: World Trade as a Graph</h1>
+      <p>
+        This project was carried out as part of the Data Driven Modeling of Complex Systems course taught by Professor Walter Quattrociocchi at the University of Rome La Sapienza. The aim of the research is to explore the potential of representing a complex phenomenon as the world trade, the driving force of our economies, through the statistical methodologies provided by complex systems theory. Can such a robust institution be permanently affected by external events? Does it adapt to these influences? These questions will be examined in the subsequent sections of this research.
+      </p>
+    </div>
+    <!-- Sezione 2: Grafico -->
+    <div id="section2" class="section" style="display: none;">
+      <img src="images/WTG.1.jpg" alt="World Trade Graph" width="10" height="5">
+    </div>
+  </div>
+  
+  <script>
+    // Funzione per mostrare la sezione selezionata e nascondere le altre
+    function openSection(sectionId) {
+      var sections = document.querySelectorAll('.section');
+      sections.forEach(function(section) {
+        section.style.display = 'none';
+      });
+      document.getElementById(sectionId).style.display = 'block';
+    }
+  </script>
 </body>
 </html>
