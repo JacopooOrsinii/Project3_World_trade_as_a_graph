@@ -53,25 +53,82 @@
 <body>
   <!-- Sidebar con menù interattivo -->
   <div class="sidebar">
-    <a href="#" onclick="openSection('section1')">Introduzione</a>
-    <a href="#" onclick="openSection('section2')">Grafico</a>
+    <a href="#" onclick="openSection('section1')">The Project</a>
+    <a href="#" onclick="openSection('section2')">Intrduction and data</a>
+    <a href="#" onclick="openSection('section3')">Graph features</a>
+    <a href="#" onclick="openSection('section4')">World trade graph representation</a>
+    <a href="#" onclick="openSection('section5')">Did the COVID affect the strength of economies?</a>
+    <a href="#" onclick="openSection('section6')">Did the COVID affect the economies interdependence?</a>
     <!-- Aggiungi altri link se necessario -->
   </div>
   
-  <!-- Contenuto principale -->
+  <!-- Section 1: The Project -->
   <div class="content">
-    <!-- Sezione 1: Introduzione -->
     <div id="section1" class="section">
       <h1>Project 3: World Trade as a Graph</h1>
       <p>
         This project was carried out as part of the Data Driven Modeling of Complex Systems course taught by Professor Walter Quattrociocchi at the University of Rome La Sapienza. The aim of the research is to explore the potential of representing a complex phenomenon as the world trade, the driving force of our economies, through the statistical methodologies provided by complex systems theory. Can such a robust institution be permanently affected by external events? Does it adapt to these influences? These questions will be examined in the subsequent sections of this research.
       </p>
-    </div>
-    <!-- Sezione 2: Grafico -->
-    <div id="section2" class="section" style="display: none;">
       <img src="images/WTG.1.jpg" alt="World Trade Graph" width="10" height="5">
     </div>
   </div>
+
+  <!-- Section 2: Intrduction and data -->
+  <div class="content">
+    <div id="section2" class="section">
+      <h1>Dataset Principali</h1>
+      <p>
+        The data that have been used are taken from 2 sources:
+      </p>
+      
+      <h3>1. CEPII Database (2017 - 2022)</h3>
+      <table>
+        <tr>
+          <th>Exporter</th>
+          <th>Importer</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>China</td>
+          <td>USA</td>
+          <td>100.000</td>
+        </tr>
+        <tr>
+          <td>USA</td>
+          <td>France</td>
+          <td>5.000</td>
+        </tr>
+        <tr>
+          <td>SouthKorea</td>
+          <td>Japan</td>
+          <td>15.000</td>
+        </tr>
+      </table>
+      
+      <h3>2. World Trade Organisation Data (2027 - 2024)</h3>
+      <table>
+        <tr>
+          <th>Country</th>
+          <th>Value</th>
+          <th>Month</th>
+        </tr>
+        <tr>
+          <td>China</td>
+          <td>1.000.000</td>
+          <td>2017-01-01</td>
+        </tr>
+        <tr>
+          <td>USA</td>
+          <td>900.000</td>
+          <td>2017-01-01</td>
+        </tr>
+        <tr>
+          <td>France</td>
+          <td>500.000</td>
+          <td>2017-01-01</td>
+        </tr>
+      </table>
+    </div>
   
   <script>
     // Funzione per mostrare la sezione selezionata e nascondere le altre
