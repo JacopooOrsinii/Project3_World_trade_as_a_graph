@@ -5,13 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>World Trade as a Graph</title>
   <style>
-    /* Stile per il layout a due colonne */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       display: flex;
     }
-    /* Sidebar */
     .sidebar {
       width: 200px;
       background-color: #333;
@@ -31,18 +29,14 @@
     .sidebar a:hover {
       background-color: #575757;
     }
-    }
-    /* Contenuto principale */
     .content {
-      margin-left: 220px; /* lascia spazio per la sidebar */
+      margin-left: 220px;
       padding: 20px;
       text-align: center;
     }
-    /* Nascondi tutte le sezioni per default */
     .section {
       display: none;
     }
-    /* Mostra solo la cover inizialmente */
     .cover {
       display: block;
     }
@@ -60,7 +54,7 @@
   </style>
 </head>
 <body>
-  <!-- Sidebar con menù interattivo -->
+  <!-- Interactive menù -->
   <div class="sidebar">
     <a href="#" onclick="openSection('section1')">The Project</a>
     <a href="#" onclick="openSection('section2')">Intrduction and data</a>
@@ -68,7 +62,6 @@
     <a href="#" onclick="openSection('section4')">World trade graph representation</a>
     <a href="#" onclick="openSection('section5')">Did the COVID affect the strength of economies?</a>
     <a href="#" onclick="openSection('section6')">Did the COVID affect the economies interdependence?</a>
-    <!-- Aggiungi altri link se necessario -->
   </div>
   
   <!-- Section 1: The Project -->
@@ -100,6 +93,15 @@
       </p>
       <img src="images/WTG.table.2.jpg" alt="WTG.table.2" width="600" height="400">
     </div>
+
+    <!-- Section 3: Graph features -->
+    <div id="section3" class="section">
+      <h1>Graph features</h1>
+      <p>
+        The analyzed graph exhibits a dense and highly interconnected structure. With 226 nodes and 26,332 arcs, the network reaches a density of 0.5178, meaning that over half of all possible connections exist. France emerges as the most influential node, with a maximum degree of 447, highlighting its central role in the network, while Bonaire Island represents the opposite end of the spectrum with a minimum degree of 41. On average, each node connects with 233 others, reflecting a robust level of interconnectivity. These metrics collectively illustrate a complex system where key nodes significantly shape the overall connectivity and dynamics of the network.
+      </p>
+    </div>
+
   </div>
   
   <script>
