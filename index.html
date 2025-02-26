@@ -134,6 +134,7 @@
 
     <!-- Section 5: Did the COVID affect the strength of economies? -->
     <div id="section5" class="section">
+      <h1>Did the COVID affect the strength of economies?</h1>
       <p>
         This section outlines the methodology used to address the first research question of the project. The analysis is based on the CEPII datasets, which have been categorized into two time periods: Pre-COVID (2017, 2018, 2019) and Post-COVID (2020, 2021, 2022). To quantify the strength of an economy, I adopted the Fitness metric, as proposed in the paper "A New Metric for Countries' Fitness and Products' Complexity" by Pietronero et al. (2012). Unlike the traditional Revealed Comparative Advantage (RCA) matrix, this approach relies on a binary matrix to evaluate a country's economic fitness.
         The Fitness score is computed for each country and for each year. To assess the impact of COVID-19, the average fitness values are calculated separately for the two time periods. The difference between these averages is then taken for each country. The distribution of these differences is presented below:
@@ -141,6 +142,29 @@
 
       <h3>Distribution of the differences in economies' strength between the 2 time periods</h3>
       <img src="images/WTG.distribution.1.jpg" alt="WTG.distribution.1.jpg" width="800" height="600">
+
+      <p>
+         From the distribution, we can observe that most values are clustered around zero, indicating that the economic strength of most countries remained relatively stable between the two periods. This suggests that, despite the external shock of COVID-19, the majority of economies did not experience significant changes in their fitness scores.
+      </p>
+    </div>
+
+    <!-- Section 6: Did the COVID affect the economies interdependence? -->
+    <div id="section6" class="section">
+      <h1>Did the COVID affect the economies interdependence?</h1>
+
+      <p>
+        This section aims to address the second research question regarding the interdependence between countries. The analysis is based on the three WTO datasets, which are structured as time series and divided into two periods: Pre-COVID (until 2019) and Post-COVID (2020–2024).
+        The methodology follows the approach outlined in the paper "How News May Affect Markets’ Complex Structure: The Case of Cambridge Analytica" by Quattrociocchi et al. (2018). The data is aggregated over consecutive months, and the changes in values are computed, normalized, and discretized. The Mutual Information is then calculated using 20 bins.
+        Below, we present the distribution of the Mutual Information values for exports, imports, and total trade:
+      </p>
+
+      <h3>Mutual Information Distribution</h3>
+      <img src="images/WTG.distribution.2.jpg" alt="WTG.distribution.2.jpg" width="800" height="600">
+
+      <p>
+        From the distributions, we can observe that COVID-19 has reduced economic interdependence. In the Post-COVID period, the distribution has shifted to the left, indicating a decline in Mutual Information values across countries. This suggests a decrease in shared information and reduced synchronization in trade.
+        The possible explanations for this trend include: diversification of trade partners, as countries sought to reduce reliance on specific markets; acceleration of supply chain fragmentation, with businesses restructuring their networks post-pandemic; changes in consumption patterns, potentially altering global demand and trade flows.
+      </p>
 
   </div>
   
