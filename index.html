@@ -12,7 +12,7 @@
     }
     .sidebar {
       width: 200px;
-      background-color: #333;
+      background-color: #FA8072;
       min-height: 100vh;
       padding-top: 20px;
       position: fixed;
@@ -21,7 +21,7 @@
     }
     .sidebar a {
       display: block;
-      color: white;
+      color: black;
       padding: 10px 15px;
       text-decoration: none;
       margin: 5px 0;
@@ -37,6 +37,12 @@
     }
     .section {
       display: none;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .section.active {
+      dispaly: block;
+      opacity: 1;
     }
     .cover {
       display: block;
@@ -86,7 +92,7 @@
 
     <!-- Section 2: Intrduction and data -->
     <div id="section2" class="section">
-      <h1>Dataset Principali</h1>
+      <h1>The Data</h1>
       <p>
         The data that have been used are taken online and are available to the public, the sources are: the CEPII Database and the World Trade Organisation.
       </p>
@@ -99,7 +105,7 @@
       
       <h3>2. World Trade Organisation Data (2017 - 2024)</h3>
       <p>
-        Complementing the previous information, the World Trade Organisation (WTO) dataset offers a macro-level perspective, these data are divided in 3 smaller datasets that refer to the imports, the exports and the activity (which is (imports+exports)/2), for the years from 2017 to 2024. Then, the 3 datasets have a column for the country, a column for the total of imports, exports or activity in that specific month and then the month in which the trade has been completed.
+         Complementing the previous dataset, the World Trade Organisation (WTO) dataset provides a macro-level perspective on global trade. It consists of three smaller datasets, each focusing on a specific aspect: imports, exports, and overall trade activity, calculated as the average of imports and exports (imports+exports)/2. These datasets cover the years from 2017 to 2024 and include three key columns: the country, the total trade value (for imports, exports, or activity) in a given month, and the corresponding month when the trade transaction took place.
       </p>
       <img src="images/WTG.table.2.jpg" alt="WTG.table.2" width="600" height="400">
     </div>
