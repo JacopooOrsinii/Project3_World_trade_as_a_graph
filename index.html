@@ -174,13 +174,20 @@
         From the distributions, we can observe that COVID-19 has reduced economic interdependence. In the Post-COVID period, the distribution has shifted to the left, indicating a decline in Mutual Information values across countries. This suggests a decrease in shared information and reduced synchronization in trade.
         The possible explanations for this trend include: diversification of trade partners, as countries sought to reduce reliance on specific markets; acceleration of supply chain fragmentation, with businesses restructuring their networks post-pandemic; changes in consumption patterns, potentially altering global demand and trade flows.
       </p>
+    </div>
 
   </div>
   
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-        openSection('section1');
+        showDefaultSection();
     });
+
+    function showDefaultSection() {
+      var defaultSection = document.getElementById('section1');
+      defaultSection.style.display = 'block';
+      defaultSection.classList.add('active');
+    }
     
     function openSection(sectionId) {
       var sections = document.querySelectorAll('.section');
