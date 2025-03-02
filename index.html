@@ -76,7 +76,7 @@
   <div class="content">
    
     <!-- Section 1: The Project -->
-    <div id="section1" class="section active" style="display: block; opacity: 1;">
+    <div id="section1" class="section">
       <h1>Project 3: World Trade as a Graph</h1>
       <p>
         This project was carried out as part of the Data Driven Modeling of Complex Systems course taught by Professor Walter Quattrociocchi at the University of Rome La Sapienza. The aim of the research is to explore the potential of representing a complex phenomenon as the world trade, the driving force of our economies, through the statistical methodologies provided by complex systems theory. Can such a robust institution be permanently affected by external events? Does it adapt to these influences? These questions will be examined in the subsequent sections of this research.
@@ -170,6 +170,9 @@
   </div>
   
   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      openSection('section1'); // Mostra la pagina "The Project" all'avvio
+    });
     
     function openSection(sectionId) {
       var sections = document.querySelectorAll('.section');
