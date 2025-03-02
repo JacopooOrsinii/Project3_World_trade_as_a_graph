@@ -5,10 +5,10 @@ This project is part of the "Data Driven Modeling of Complex Systems" course tau
 
 # Project Structure
 The project is structured into several sections, accessible via an interactive menu, including:
-- Introduction and data sources 📊 \
-- Structural properties of the global trade graph 🔗 \
-- Graph-based visualization of international trade networks 🌎 \
-- Analysis of COVID-19's impact on economies and trade interdependence 🦠💰 \
+- Introduction and data sources 📊
+- Structural properties of the global trade graph 🔗
+- Graph-based visualization of international trade networks 🌎
+- Analysis of COVID-19's impact on economies and trade interdependence 🦠💰
 
 # Why an HTML file?
 For this version of the project, I decided to publish it as an interactive HTML file instead of a traditional static report. I wanted to experiment with something new, offering a more dynamic and engaging way to explore the data and I thought the HTML version of the project could have suited this case. Images and graphs are well-centered and structured, while smooth transitions enhance the overall user experience.
