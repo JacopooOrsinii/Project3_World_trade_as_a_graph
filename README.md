@@ -14,7 +14,7 @@ The project is structured into several sections, accessible via an interactive m
 For this version of the project, I decided to publish it as an interactive HTML file instead of a traditional static report. I wanted to experiment with something new, offering a more dynamic and engaging way to explore the data and I thought the HTML version of the project could have suited this case. Images and graphs are well-centered and structured, while smooth transitions enhance the overall user experience.
 
 # How to view the project
-Just click the following link: 
+Just click the following link: https://jacopooorsinii.github.io/Project3_World_trade_as_a_graph/
 
 # Contact
 Feel free to reach out if you have any questions or suggestions, message me at the following mail: jacopo.orsini.ds@gmail.com
