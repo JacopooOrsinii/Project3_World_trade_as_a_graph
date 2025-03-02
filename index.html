@@ -179,20 +179,20 @@
     function openSection(sectionId) {
       var sections = document.querySelectorAll('.section');
       
-      sections.forEach(function(section) {
-        section.classList.remove('active'); // Rimuove la classe active (diminuisce l'opacità)
-        
-        setTimeout(() => { 
-          section.style.display = 'none'; // Nasconde solo dopo la fine della transizione
-        }, 500); // 500ms è la durata della transizione CSS
+      sections.forEach(function (section) {
+        if (section.id !== sectionId) {
+          section.classList.remove('active'); // Rende invisibile la sezione
+          setTimeout(() => {
+            section.style.display = 'none'; // Nasconde dopo la transizione
+          }, 500); // 500ms è la durata della transizione di opacità
+        }
       });
       
       var targetSection = document.getElementById(sectionId);
-      targetSection.style.display = 'block'; // Mostra la nuova sezione immediatamente
-      
+      targetSection.style.display = 'block'; // Mostra subito la sezione
       setTimeout(() => {
-        targetSection.classList.add('active'); // Avvia la dissolvenza dopo un piccolo ritardo
-      }, 10);
+        targetSection.classList.add('active'); // Avvia la dissolvenza
+      }, 10); // Ritardo minimo per attivare la transizione
     }
   </script>
 </body>
